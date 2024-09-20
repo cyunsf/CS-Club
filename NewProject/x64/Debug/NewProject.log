@@ -1,0 +1,3 @@
+﻿  NewProject.cpp
+C:\Users\Christian Yun\source\repos\NewProject\NewProject\NewProject.cpp(23): warning C4715: 'sumKtoN': not all control paths return a value
+  NewProject.vcxproj -> C:\Users\Christian Yun\source\repos\NewProject\x64\Debug\NewProject.exe
