@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NewProject.cpp",
               "DocumentMoniker": "C:\\Users\\liuli\\source\\repos\\CIS 250\\NewProject\\NewProject\\NewProject.cpp",
               "RelativeDocumentMoniker": "NewProject\\NewProject.cpp",
-              "ToolTip": "C:\\Users\\liuli\\source\\repos\\CIS 250\\NewProject\\NewProject\\NewProject.cpp*",
-              "RelativeToolTip": "NewProject\\NewProject.cpp*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\liuli\\source\\repos\\CIS 250\\NewProject\\NewProject\\NewProject.cpp",
+              "RelativeToolTip": "NewProject\\NewProject.cpp",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAcwGYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-18T01:14:42.754Z",
               "EditorCaption": ""

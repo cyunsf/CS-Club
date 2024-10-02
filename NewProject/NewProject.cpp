@@ -32,19 +32,6 @@ int multiplication(int x, int y)
 	return x + multiplication(x, y - 1);
 }
 
-/*string noAdjDupes(string n)
-{
-	int length = n.length();
-
-	int j = 0;
-
-	for (int i = 0; i < length - 1; i++)
-	{
-		
-	}
-	return n;
-}*/
-
 template <typename T1, typename T2>
 auto add(T1 a, T2 b)
 {
@@ -101,44 +88,27 @@ void bigPointQuestion()
 	}
 }
 
+int missingNumber(int nums[]) {
+	int numsLength = sizeof(nums);
+	int i = 0;
+	int numChecker = 0; //pick a number and check if it's in the array, let's start at 0
+
+	while (i <= numsLength) { //traverse through the array
+		if (numChecker == nums[i]) {
+			numChecker++;	//if the number we picked does exist in the array, check the next number up
+			i = 0;			//and reset our traversal so we check the array starting at the beginning again
+		}
+		i++; //make sure we can exit our while loop
+	}
+	return numChecker; //we've been through the array and couldn't match the current number, this must be the missing number
+}
+
 int main()
 {
-	//cout << sumKtoN(5, 5) << endl;
-	//cout << noAdjDupes("AAABBCA") << endl;
-
-	//cout << add(1.25, 2);
-
-	//cout << multiplication(30, 4) << endl;
-
-	//bigPointQuestion();
-
-	/*string myArray[10];
-	for (int i = 0; i < 10; i++)
-	{
-		myArray[i] = "Christian";
-	}
-	myArray[9] = "Yun";
-	int i = 9;
-	while (i >= 0)
-	{
-		//cout << myArray[i] << endl;
-		for (int j = myArray[i].length(); j >= 0; j--)
-		{
-			cout << myArray[i][j];
-		}
-		cout << endl;
-		i--;
-	}*/
-
-	/*int list1[9]{10,20,30,40};
-	int list2[20]{ 5,5,10,10 };
-	int list3[14]{ 0,0,0,0 };
-	arrayDiff(list1, list2, list3, 4);
-
-	for (int i = 0; i < 4; i++)
-	{
-		cout << list3[i] << endl;
-	}*/
+	int nums[]{ 3,0,1 };
+	//int nums[]{ 0,1 };
+	//int nums[]{ 9,6,4,2,3,5,7,0,1 };
+	std::cout << missingNumber(nums) << std::endl;
 
 	return 0;
 }
